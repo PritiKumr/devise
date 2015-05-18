@@ -93,7 +93,7 @@ module Devise
 
     def redirect_url
       if warden_message == :timeout
-        flash[:timedout] = true if is_flashing_format?
+        #flash[:timedout] = true if is_flashing_format?
 
         path = if request.get?
           attempted_path
